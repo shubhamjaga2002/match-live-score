@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Match Live Score</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Elements to display match details -->
+	<h2 class="match-title">Match Title: </h2>
+	<p class="team1-name">Team 1 Name: </p>
+	<p class="team1-run">Team 1 Run: </p>
+	<p class="team2-name">Team 2 Name: </p>
+	<p class="team2-run">Team 2 Run: </p>
+	<p class="match-place">Place: </p>
+	<p class="match-date">Date: </p>
+	<p class="match-time">Time: </p>
+	<p class="match-overview">Match Overview: </p>
+	
+	<button class="btn">Click</button>
+
+
+	<script type="text/javascript" src="script.js"></script>
+
+<!-- script type="text/javascript">
+// 	const matchTitle = document.querySelector('.match-title');
+// 	const api = 'https://cricbuzz-live.vercel.app/v1/matches/live?type=international';
+// 	const button = document.querySelector('.btn');
+// 	const getScore = async () =>{
+// 		try{
+// 			const response = await fetch(api);
+// 			if (!response.ok) {
+// 				throw new Error(`HTTP Error:${response.status}`);
+// 			}
+
+// 			const result = await response.json();
+// 			console.log("Match Id: ", result.data.matches[0].id);//match id
+// 			matchTitle.innerText = result.data.matches[0].title;
+			
+// 			console.log("Match Both teams name & run: ",result.data.matches[0].teams);
+
+// 			// first team name and run data
+// 			console.log(`Japan Team Name 1: ${result.data.matches[0].teams[0].team}`);
+// 			console.log(`Japan Team Run: ${result.data.matches[0].teams[0].run}`);
+// 1
+// 			console.log(`Indonesia Team Name 2: ${result.data.matches[0].teams[1].team}`);
+// 			console.log(`Indonesia Team Run: ${result.data.matches[0].teams[1].run}`);
+
+// 			console.log(`TimeAndPlace Place: ${result.data.matches[0].timeAndPlace.place}`);
+// 			console.log(`TimeAndPlace Date: ${result.data.matches[0].timeAndPlace.date}`);
+// 			console.log(`TimeAndPlace Time: ${result.data.matches[0].timeAndPlace.time}`);
+
+// 			console.log(`Whot is Won: ${result.data.matches[0].overview}`);
+
+			
+// 		}	catch (error){
+// 			console.error('Error Fetch Data:',error);
+// 		}
+// 	}
+
+// 	button.addEventListener('click', getScore);
+</script> -->
+</body>
+</html>
